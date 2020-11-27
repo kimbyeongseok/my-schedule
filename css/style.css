@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
+
+/* reset style */
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+em {
+  font-style: normal;
+}
+/* general style */
+body {
+  font-size: 14px;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+}
+.background {
+  background: url(../img/background_2.gif) no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.center {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+.update {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.update .btn {
+  background: #2d2d2d;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+/* header style */
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed black;
+  /* box-shadow: 1px 0 3px #555; */
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* main total progress bar style */
+.main {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.main .totalProgress {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+}
+.main .totalProgress .totalTit {
+  width: 30%;
+  background: #2d2d2d;
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+.main .totalProgress .totalTit h2 {
+  font-weight: 400;
+}
+.main .totalProgress .totalBar {
+  width: 70%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-right: 5px solid black;
+  border-top: 0.5px solid #888;
+  border-bottom: 0.5px solid #888;
+}
+.main .totalProgress .totalBar span {
+  width: 0;
+  height: 70%;
+  background: url(../img/pattern.gif) no-repeat center center;
+  /* background-size: cover; */
+  display: flex;
+  color: #fff;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+}
+.main .totalProgress .totalBar span b {
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 0 0 2px black;
+}
+
+/* main each portfolios progress style */
+.portfolios {
+  width: 100%;
+  height: auto;
+  margin: 50px 0 10px 0;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border-left: 2px dotted black;
+}
+.eachPort {
+  width: 100%;
+  height: auto;
+}
+.eachPort .port {
+  width: 16.66%;
+  float: left;
+}
+.eachPort .port h3 {
+  width: 100%;
+  text-align: center;
+  background: #2d2d2d;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-right: 1px solid #fff;
+}
+.eachPort .port p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: #999;
+  color: #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.eachPort .port p input {
+  width: 20%;
+  margin: auto;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  background: #999;
+  color: #fff;
+}
+
+/* work list style */
+.workList {
+  width: 100%;
+  height: auto;
+}
+.workList p {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.workList p span {
+  display: block;
+  float: left;
+}
+.workList p.workTitle span {
+  background: #2d2d2d;
+  color: #fff;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-left: 1px solid #fff;
+}
+.workList p span.num {
+  width: 10%;
+}
+.workList p span.contents {
+  width: 70%;
+}
+.workList p span.date {
+  width: 20%;
+}
+.workList .workContents {
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.workList p.workContents:nth-child(odd) {
+  background: #eee;
+}
+.workList p.workContents span.contents {
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.workList p.workContents span.contents a {
+  color: #333;
+}
+.number {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 0;
+  text-align: center;
+}
+.number span {
+  display: inline-block;
+  background: #ddd;
+  color: black;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  line-height: 2;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+.number span:hover {
+  color: #fff;
+  background: #333;
+}
+.numCount.active {
+  color: #fff;
+  background: #333;
+}
+/* ======================== */
+/* process style */
+.wrap.process {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.close_icon {
+  width: 25px;
+  float: left;
+  position: absolute;
+  margin-top: 3px;
+}
+.close_icon img {
+  width: 100%;
+}
+.center.process {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px dashed black;
+  margin: 20px auto 0;
+  background: #fff;
+  box-shadow: 2px 2px 5px #777;
+}
+.processTitle {
+  padding-top: 30px;
+}
+.processTitle h1 {
+  font-size: 25px;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  padding: 5px 30px;
+  display: inline-block;
+}
+.inputBox {
+  width: 60%;
+  margin: auto;
+  height: auto;
+  padding: 20px 0 50px;
+}
+.inputBox p {
+  font-size: 30px;
+  color: #ccc;
+  float: right;
+}
+.inputBox > div {
+  width: 100%;
+  height: auto;
+}
+.inputBox > div > textarea {
+  width: 100%;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  background: #eee;
+  font-weight: 300;
+}
+.inputBox > div.inputTitle > textarea {
+  height: 10vh;
+}
+.inputBox > div.inputContents > textarea {
+  height: 40vh;
+}
+/* ==================================== */
+/* detail process page style  */
+.detailWrap {
+  height: auto;
+}
+.processTitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.processTitle h1 {
+  border-bottom: none;
+}
+.main.detail .totalBar {
+  background: #eee;
+}
+.main.detail .detailTit {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-left: 2px dotted black;
+  margin-top: 10px;
+}
+
+.main.detail .titleBox {
+  display: none;
+}
+.main.detail .titleBox b {
+  width: 10%;
+  display: block;
+  float: left;
+}
+.main.detail .titleBox textarea {
+  width: 90%;
+  height: auto;
+  color: #333;
+  resize: none;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  padding: 10px;
+  float: right;
+  font-size: 14px;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+}
+
+.main.detail .workList {
+  padding: 10px 0;
+}
+.main.detail .workList p {
+  display: flex;
+  align-items: center;
+}
+.main.detail .workContents em.updateCon,
+.main.detail .workContents textarea.updateCon {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: block;
+  color: #333;
+  font-style: normal;
+  background: #fff;
+}
+.main.detail .workContents textarea.updateCon {
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  resize: none;
+  display: none;
+  border: 2px solid #aaa;
+}
+
+.main.detail .updateSubmit {
+  display: none;
+}

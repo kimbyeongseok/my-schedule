@@ -1,0 +1,90 @@
+@media screen and (max-width: 1280px) {
+  .center {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .eachPort .port {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main .totalProgress {
+    flex-direction: column;
+  }
+  .main .totalProgress .totalTit {
+    width: 100%;
+  }
+  .main .totalProgress .totalTit h2 {
+    font-size: 20px;
+  }
+  .main .totalProgress .totalBar {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .eachPort .port {
+    width: 50%;
+  }
+  .inputBox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    margin: 15px 0;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+  .eachPort .port h3 {
+    font-size: 12px;
+  }
+  .main .totalProgress .totalTit h2 {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .update .btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  .portfolios {
+    margin: 25px 0 10px 0;
+  }
+  .eachPort .port p {
+    padding: 5px 0;
+  }
+  .workList p span {
+    font-size: 12px;
+  }
+  .workList p.workContents span em {
+    display: none;
+  }
+  .inputBox {
+    padding: 30px 0;
+  }
+  .inputBox > div > textarea {
+    font-size: 12px;
+  }
+  .processTitle h1 {
+    font-size: 20px;
+  }
+  .processTitle {
+    padding-top: 20px;
+  }
+  .close_icon {
+    width: 20px;
+    margin-top: 3px;
+  }
+  .center.subPage h2 {
+    float: right;
+  }
+  .center.process {
+    width: 90%;
+  }
+}
